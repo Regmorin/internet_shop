@@ -2,7 +2,7 @@
 
 
 <div class="biggest">
-	<img class="biggest__image" src="<?php echo $post['image']; ?>" alt="" width="700" height="500">
+	<img class="biggest__image" src="img/<?php echo $post['image']; ?>" alt="" width="700" height="500">
 	<div class="desc">
 		<h1 style="margin-bottom: 30px;" align="center"><?php echo $post['name']; ?></h1>
 		<p><?php echo $post['descmax']; ?></p>

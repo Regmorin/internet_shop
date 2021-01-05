@@ -10,142 +10,142 @@
 	?>
 	<style>
 		body {
-	margin: 0;
-}
+			margin: 0;
+		}
 
-.header__color {
-	height: 80px;
-	width: 100%;
-	background-color: #022249;
-}
+		.header__color {
+			height: 80px;
+			width: 100%;
+			background-color: #022249;
+		}
 
-.header {
-	width: 1700px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-}
+		.header {
+			width: 1700px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+		}
 
-.contant {
-	width: 1700px;
-	margin: 0 auto;
-}
+		.contant {
+			width: 1700px;
+			margin: 0 auto;
+		}
 
-.table {
-	width: 500px;
-	min-height: 600px;
-	border: 1px solid black;
-	border-radius: 30px;
-	margin-top: 40px;
-	box-shadow: 10px 10px 50px black;
-}
+		.table {
+			width: 500px;
+			min-height: 600px;
+			border: 1px solid black;
+			border-radius: 30px;
+			margin-top: 40px;
+			box-shadow: 10px 10px 50px black;
+		}
 
-.tables {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+		.tables {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
 
-.footer__color {
-	height: 400px;
-	width: 100%;
-	background-color: #022249;
-	margin-top: 40px;
-}
+		.footer__color {
+			height: 400px;
+			width: 100%;
+			background-color: #022249;
+			margin-top: 40px;
+		}
 
-.footer {
-	width: 1700px;
-	margin: 0 auto;
-	padding-top: 10px;
-}
+		.footer {
+			width: 1700px;
+			margin: 0 auto;
+			padding-top: 10px;
+		}
 
-.product1 {
-	list-style-type: none;
-	width: 280px;
-}
+		.product1 {
+			list-style-type: none;
+			width: 280px;
+		}
 
-a {text-decoration: none;}
+		a {text-decoration: none;}
 
-.products {
-	display: flex;
-	justify-content: space-around;
-}
+		.products {
+			display: flex;
+			justify-content: space-around;
+		}
 
-.button {
-	margin-left: 200px;
-	margin-bottom: 10px;
-	background-color: #022249;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+		.button {
+			margin-left: 200px;
+			margin-bottom: 10px;
+			background-color: #022249;
+			padding-right: 20px;
+			padding-left: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-.cleaner {
-	color: red;
-	margin-bottom: 439px;
-}
+		.cleaner {
+			color: red;
+			margin-bottom: 439px;
+		}
 
-.biggest {
-	width: 1700px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: row;
-}
+		.biggest {
+			width: 1700px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: row;
+		}
 
-.desc {
-	width: 100%;
-}
+		.desc {
+			width: 100%;
+		}
 
-.biggest__image {
-	margin-right: 20px;
-}
-
-
-.tab {
-	display: flex;
-	flex-direction: column;
-}
-
-.table {
-	min-height: 750px;
-	margin-bottom: 20px;
-}
-
-.product__delivery {
-	background-color: #022249;
-	font-size: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: white;
-}
-
-.secure {
-	margin-top: 60px;
-	color: white;
-}
+		.biggest__image {
+			margin-right: 20px;
+		}
 
 
-/* Поиск */
-.search {
-	height: 40px;
-	width: 750px;
-	border-radius: 30px;
-	margin-top: 15px;
-	margin-right: 5px;
-	font-size: 20px;
-}
+		.tab {
+			display: flex;
+			flex-direction: column;
+		}
 
-.search-button {
-	font-size: 20px;
-	height: 45px;
-	width: 100px;
-	border-radius: 30px;
-	margin-top: 15px;
-	margin-right: 5px;
-}
+		.table {
+			min-height: 750px;
+			margin-bottom: 20px;
+		}
+
+		.product__delivery {
+			background-color: #022249;
+			font-size: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+
+		.secure {
+			margin-top: 60px;
+			color: white;
+		}
+
+
+		/* Поиск */
+		.search {
+			height: 40px;
+			width: 750px;
+			border-radius: 30px;
+			margin-top: 15px;
+			margin-right: 5px;
+			font-size: 20px;
+		}
+
+		.search-button {
+			font-size: 20px;
+			height: 45px;
+			width: 100px;
+			border-radius: 30px;
+			margin-top: 15px;
+			margin-right: 5px;
+		}
 	</style>
 	
 
@@ -160,7 +160,7 @@ a {text-decoration: none;}
 				<a href="/"><img src="img/spots-меш-2d-гаечный-ключ-молоток-пылающий-легкий-значок-векторные-клипарты_csp77586966.png" alt="" width="80"></a>
 			</div>
 
-			<form action="" method="GET">
+			<form action="templates/search.php" method="GET">
 				<input type="search" class="search" name="search" placeholder="Поиск">
 				<input type="submit" class="search-button" name="search-button" value="Найти">
 			</form>
