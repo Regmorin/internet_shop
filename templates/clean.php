@@ -1,1 +1,0 @@
-<h1 class="cleaner" align="center">Корзина скоро появится!</h1>

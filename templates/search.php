@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>search</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<?php 
+	$connect = mysqli_connect("127.0.0.1", "root", "root", "shop");
+    $search_get = $_GET['search'];
+    $sql = "SELECT * FROM `products` WHERE `name` LIKE '%$search_get%'";
+
+	$select = mysqli_query($connect, $sql);
+	?>
+	<?php require "connect.php" ?>
 </head>
 <body>
     <!-- header -->
@@ -19,49 +27,44 @@
 				<input type="search" class="search" name="search" placeholder="Поиск">
 				<input type="submit" class="search-button" name="search-button" value="Найти">
 			</form>
-
-			<div class="clean">
-				<a href="index.php?page=clean"><img src="../img/корзина.png" alt="" width="80"></a>
-			</div>
 		</div>
 
     </div>
 
 
-    <?php 
-    $connect = mysqli_connect("127.0.0.1", "root", "root", "shop");
-    $search_get = $_GET['search'];
-    $sql = "SELECT * FROM `products` WHERE `name` LIKE '%$search_get%'";
+    
+	
+	<?php 
 
-    $select = mysqli_query($connect, $sql);
+	$page = $_GET['page'];
+	if (!isset($page)) {
+		require 'searchform.php';
+	}elseif ($page == 'biggest_search') {
+		$id = $_GET['id'];
+		$post = [];
+		foreach ($posts as $bigger) {
+			if ($bigger['id'] == $id) {
+				$post = $bigger;
+				break;
+			}
+		}
+		require 'biggest_search.php';
 
-    while ($select_while = mysqli_fetch_assoc($select)):?>
+	}elseif ($page == 'makeOrder') {
+		require 'templates/makeOrder.php';
+	}elseif ($page == 'payment') {
+		require 'templates/payment.php';
+	}elseif ($page == 'delivery') {
+		require 'templates/delivery.php';
+	}elseif ($page == 'license') {
+		require 'templates/license.php';
+	}elseif ($page == 'aboutUs') {
+		require 'templates/aboutUs.php';
+	}elseif (!empty($_GET)) {
+		require 'templates/search.php';
+	}
 
-    <!-- contant -->
-	<div class="contant">
-
-        <div class="tables">
-
-            <div class="tab">
-                <div class="table">
-                    <div class="column1">
-                        <img src="../img/<?php echo $select_while['image']; ?>" alt="" style="width: 100%; margin-top: 30px;">
-                        <h2 align="center"><?php echo $select_while['name']; ?></h2>
-                        <p><?php echo $select_while['descmini']; ?></p>
-                        <h2 align="center">Цена: <?php echo $select_while['price']; ?> руб. </h2>
-                    </div>	
-                </div>
-
-                <div class="column2">
-                    <a href="index.php?page=biggest&id=<?php echo $select_while['id']; ?>"><button style="color: white;" class="button">Подробнее</button></a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <?php endwhile; ?>
+	?>
 
 
 
