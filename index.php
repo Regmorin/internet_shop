@@ -5,6 +5,22 @@
 	<title>LocalHost</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<?php require 'templates/connect.php'; ?>
+
+	<style>
+		.header__color {
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+		}
+
+		.footer__color {
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+		}
+		
+		.products {
+			margin-top: 30px;
+		}
+	</style>
 </head>
 <body>
 	<!-- header -->
@@ -22,6 +38,7 @@
 		</div>
 	</div>
 
+	<!-- content -->
 	<?php 
 
 	$page = $_GET['page'];
@@ -54,6 +71,8 @@
 
 	?>
 
+
+	<!-- footer -->
 	<div class="footer__color">
 		<div class="footer">
 			<div class="products">

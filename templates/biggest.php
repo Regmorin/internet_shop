@@ -1,6 +1,6 @@
 
 
-
+<!-- details about product -->
 <div class="biggest">
 	<img class="biggest__image" src="img/<?php echo $post['image']; ?>" alt="" width="700" height="500">
 	<div class="desc">

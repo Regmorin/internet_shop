@@ -1,3 +1,4 @@
+<!-- doing search file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,7 @@
 
 
     
-	
+	<!-- content -->
 	<?php 
 
 	$page = $_GET['page'];
