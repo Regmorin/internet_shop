@@ -135,3 +135,17 @@ a {text-decoration: none;}
 	margin-top: 15px;
 	margin-right: 5px;
 }
+
+.header__color {
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.footer__color {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.products {
+	margin-top: 30px;
+}

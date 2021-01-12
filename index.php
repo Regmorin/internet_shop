@@ -5,22 +5,6 @@
 	<title>LocalHost</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<?php require 'templates/connect.php'; ?>
-
-	<style>
-		.header__color {
-			border-bottom-left-radius: 30px;
-			border-bottom-right-radius: 30px;
-		}
-
-		.footer__color {
-			border-top-left-radius: 30px;
-			border-top-right-radius: 30px;
-		}
-		
-		.products {
-			margin-top: 30px;
-		}
-	</style>
 </head>
 <body>
 	<!-- header -->
@@ -34,13 +18,11 @@
 				<input type="search" class="search" name="search" placeholder="Поиск">
 				<input type="submit" class="search-button" name="search-button" value="Найти">
 			</form>
-
 		</div>
 	</div>
 
 	<!-- content -->
 	<?php 
-
 	$page = $_GET['page'];
 	if (!isset($page)) {
 		require 'templates/main.php';
@@ -68,7 +50,6 @@
 	}elseif (!empty($_GET)) {
 		require 'templates/search.php';
 	}
-
 	?>
 
 
@@ -104,16 +85,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

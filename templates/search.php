@@ -29,14 +29,10 @@
 				<input type="submit" class="search-button" name="search-button" value="Найти">
 			</form>
 		</div>
-
-    </div>
-
-
-    
+	</div>
+	    
 	<!-- content -->
 	<?php 
-
 	$page = $_GET['page'];
 	if (!isset($page)) {
 		require 'searchform.php';
@@ -50,7 +46,6 @@
 			}
 		}
 		require 'biggest_search.php';
-
 	}elseif ($page == 'makeOrder') {
 		require 'templates/makeOrder.php';
 	}elseif ($page == 'payment') {
@@ -64,7 +59,6 @@
 	}elseif (!empty($_GET)) {
 		require 'templates/search.php';
 	}
-
 	?>
 
 
@@ -75,12 +69,9 @@
 
 
     <!-- footer -->
-    <div class="footer__color">
-		
+    <div class="footer__color">	
 		<div class="footer">
-
-			<div class="products">
-			
+			<div class="products">			
 				<ul class="product1">
 					<li style="font-size: 25px; color: white;">Покупателям</a></li><br>
 					<li style="font-size: 20px;"><a style="color: #C1AFD0;" href="index.php?page=makeOrder">Как сделать заказ</a></li><br>
@@ -100,15 +91,12 @@
 					<li style="font-size: 20px;"><a target="__blank" style="color: #C1AFD0;" href="https://www.facebook.com/groups/3612651908779519">Facebook</a></li>
 					<li style="font-size: 20px;"><a target="__blank" style="color: #C1AFD0;" href="https://www.instagram.com/molotok_moscow/">Instagram</a></li>
 				</ul>
-
 			</div>
 
 			<div class="secure">
 				<h3 align="center">&copy; Molotok</h3>
 			</div>
-
 		</div>
-
 	</div>
 </body>
 </html>

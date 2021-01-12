@@ -1,1 +1,1 @@
-# this is my network shop
+# this is my internet shop
