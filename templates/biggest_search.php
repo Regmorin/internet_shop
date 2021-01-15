@@ -14,6 +14,7 @@
 			</div>
 
 			<div class="price1">
+				<span><button class="pay__product">Купить</button></span>
 				<span class="product__delivery">8 966 000 2329</span>
 			</div>
 		</div>

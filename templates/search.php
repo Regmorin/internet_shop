@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>search</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- add font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+	<!-- add font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<!-- add jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<?php 
 	$connect = mysqli_connect("127.0.0.1", "root", "root", "shop");
     $search_get = $_GET['search'];
@@ -18,6 +22,20 @@
 	$select = mysqli_query($connect, $sql);
 	?>
 	<?php require "connect.php" ?>
+
+
+	<style>
+		.pay__product {
+			background-color: #022249;
+			font-size: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+
+	</style>
 </head>
 <body>
     <!-- header -->
@@ -102,5 +120,8 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script src="../js/script.js"></script>
 </body>
 </html>
